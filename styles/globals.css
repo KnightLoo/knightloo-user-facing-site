@@ -33,7 +33,7 @@ body {
   transition-duration: 300ms;
 }
 
-.btn-purple {
+.btn-black {
   --tw-bg-opacity: 1;
   /* background-color: rgba(82, 103, 223, var(--tw-bg-opacity)); */
   background-color: black;
@@ -58,7 +58,6 @@ body {
   .hero {
     background-image: url("/1634699787422.png");
     background-position-x: 100%;
-    background-position-y: -5%;
     background-repeat: no-repeat;
     background-size:  contain;
     margin-left: auto;

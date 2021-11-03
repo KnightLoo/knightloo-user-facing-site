@@ -1,4 +1,4 @@
-export default function (req, res) {
+export default async function (req, res) {
     require('dotenv').config()
     const user = process.env.user
     const password = process.env.password
@@ -13,6 +13,17 @@ export default function (req, res) {
       },
       secure: true,
     })
+    await new Promise((resolve, reject) => {
+      transporter.verify(function (error, success) {
+          if (error) {
+              console.log(error);
+              reject(error);
+          } else {
+              console.log("Server is ready");
+              resolve(success);
+          }
+      });
+  });
     const mailData = {
       from: user,
       to: 'gomezgabriel24@hotmail.com',
@@ -21,11 +32,18 @@ export default function (req, res) {
       html: `<div>${req.body.message}</div><p>Sent from:
       ${req.body.email}</p>`
     }
-    transporter.sendMail(mailData, function (err, info) {
-      if(err)
-        console.log(err)
-      else
-        console.log(info)
-    })
-    res.status(200).end()
+    await new Promise((resolve, reject) => {
+      transporter.sendMail(mailData, function (err, info) {
+        if(err){
+          console.log(err)
+          reject(err);
+        }
+        else{
+          console.log(info)
+          resolve(info);
+        }   
+      });
+    });
+
+      res.status(200).end()
   }

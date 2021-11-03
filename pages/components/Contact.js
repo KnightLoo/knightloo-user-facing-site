@@ -92,13 +92,12 @@ export default function Contact (){
                     <div 
                     className="flex sm:mx-auto flex-row-reverse mt-8 w-5/6">
                                 <button 
-                                type="submit" className="btn btn-purple hover:bg-bookmark-white">
+                                type="submit" className="btn btn-black hover:bg-gray-900">
                                 Send Message
                                 </button>
                     </div>
                 </form>
             </div>
         </section>
-
     );
 }
