@@ -5,14 +5,15 @@ export default function Navbar(props){
     const toggleMenu = () => {
       setDropdown(!dropdown);
     }
-  
+  // lg:-mb-32
     return (
-      <nav className="flex items-center bg-white p-3 flex-wrap"> 
-        <a href="#" className="p-2 mr-4 inline-flex items-center">
-          <span className="heading-text text-xl text-black font-bold uppercase tracking-wide"
-            >KnightLoo
-          </span>
-        </a>
+      <nav className="flex items-center p-2 flex-wrap lg:-mb-20 lg:flex-nowrap">
+        
+        {/* <img className="logo-container" src="/logo.png"/> */}
+        <div className="text-center md:text-center lg:text-left md:w-1/3">
+          <img className="logo-container" src="/logo.png"/>
+        </div>
+
         <button type="button" className="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400 lg:hidden ml-auto"
          onClick={toggleMenu}
         >
@@ -26,23 +27,23 @@ export default function Navbar(props){
           id="navigation"
         >
           <div
-            className="p-text lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto"
+            className="p-text lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center flex flex-col lg:h-auto"
           >
             <a
               href="#features"
-              className="p-text lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+              className="center-text p-text lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
             >
               <span>Features</span>
             </a>
             <a
               href="#gallery"
-              className="p-text lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+              className="center-text p-text lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
             >
               <span>Gallery</span>
             </a>
             <a
               href="#contact"
-              className="p-text lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+              className="center-text p-text lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
             >
               <span>Contact Us</span>
             </a>

@@ -5,14 +5,14 @@ export default function Features(){
         <section id="features" 
         className="relative bg-gray-100">
             <div className="container items-center mt-20">
-                <h2 className="heading-text text-5xl  text-center lg:text-left mb-3">
+                <h2 className="heading-text text-5xl text-center lg:text-left py-10">
                         App Features
                 </h2>
             </div>
-            <div className="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-30"> 
-                <div className="container flex-1 flex-col"> 
+            <div className="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-8"> 
+                <div className="container flex-1 flex-col lg:-mt-16"> 
                     <div className="flex flex-col items-center lg:items-start lg:flex-row  md:space-x-10">
-                        <div className="mb-4 md:mb-0">
+                        <div className="mb-4 md:mb-4 lg:mb-0">
                             <i className="fas fa-map-marked-alt fa-2x"></i>
                         </div>
                         <div className="flex flex-col items-center lg:items-start">
@@ -25,7 +25,7 @@ export default function Features(){
                         </div>
                     </div>
                     <div className="flex flex-col items-center mt-8 lg:items-start lg:flex-row md:space-x-10">
-                        <div className="mb-4 md:mb-0">
+                        <div className="mb-4 md:mb-4 lg:mb-0">
                         <i className="fas fa-filter fa-2x"></i>
                         </div>
                         <div className="flex flex-col items-center lg:items-start">
@@ -38,7 +38,7 @@ export default function Features(){
                         </div>
                     </div>
                     <div className="flex flex-col items-center mt-8 lg:items-start lg:flex-row md:space-x-8">
-                        <div className="mb-4 md:mb-0">
+                        <div className="mb-4 md:mb-4 lg:mb-0">
                         <i className="fas fa-user-edit fa-2x"></i>
                         </div>
                         <div className="flex flex-col items-center lg:items-start">
@@ -51,7 +51,7 @@ export default function Features(){
                         </div>
                     </div>
                     <div className="flex flex-col items-center mt-8 lg:items-start lg:flex-row md:space-x-8">
-                        <div className="mb-4 md:mb-0">
+                        <div className="mb-4 md:mb-4 lg:mb-0">
                         <i className="fas fa-wrench fa-2x"></i>
                         </div>
                         <div className="flex flex-col items-center lg:items-start">
@@ -64,8 +64,8 @@ export default function Features(){
                         </div>
                     </div>
                 </div>
-                <div className="flex justify-center mb-10 md:mb-16 lg:mb-0">
-                    <img className="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" src="/x.png" ></img>
+                <div className="flex justify-center mb-10 md:mb-16 lg:-mt-12">
+                <img className="w-11/12 sm:w-3/5 md:w-3/5 lg:w-9/12" src="/image1.png"/>
                 </div>
             </div>  
         </section>

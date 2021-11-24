@@ -8,13 +8,10 @@ export default function Carousel(){
     return(
       <section id="gallery"
       className="relative">
-        <div className="container items-center mt-20 flex-col">
-          
-          <h2 className="heading-text text-5xl  text-center lg:text-left mb-10">
+        <div className="container items-center mt-10 flex-col">
+          <h2 className="heading-text text-5xl text-center lg:text-left mb-14">
             Gallery
           </h2>
-          
-          
           <Swiper
             breakpoints={{
               // when window width is >= 640px
@@ -47,24 +44,29 @@ export default function Carousel(){
           
           <SwiperSlide>
           
-          <img className="sm:w-3/4 sm:h-3/4 md:w-full md:h-full" src="/x.png"/>
+          <img className="w-full sm:w-3/5 md:w-3/5 lg:w-full" src="/image0.png"/>
           
           </SwiperSlide>
           <SwiperSlide>
            
-          <img className="sm:w-3/4 sm:h-3/4 md:w-full md:h-full" src="/x.png"/>
+          <img className="w-full sm:w-3/5 md:w-3/5 lg:w-full" src="image3.png"/>
           
           </SwiperSlide>
           <SwiperSlide>
            
-          <img className="sm:w-3/4 sm:h-3/4 md:w-full md:h-full" src="/x.png"/>
+          <img className="w-full sm:w-3/5 md:w-3/5 lg:w-full" src="/image2.png"/>
           
           </SwiperSlide>
           <SwiperSlide>
            
-            <img className="sm:w-3/4 sm:h-3/4 md:w-full md:h-full" src="/x.png"/>
+            <img className="w-full sm:w-3/5 md:w-3/5 lg:w-full" src="/image1.png"/>
            
            </SwiperSlide>
+           <SwiperSlide>
+           
+           <img className="w-full sm:w-3/5 md:w-3/5 lg:w-full" src="/image4.png"/>
+          
+          </SwiperSlide>
           
         </Swiper>
        

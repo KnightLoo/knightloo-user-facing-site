@@ -5,7 +5,6 @@ export default function Contact (){
     const {register, clearErrors, handleSubmit, reset, formState:{errors, isSubmitSuccessful, isValid}} = useForm();
     const onSubmit = data => {
         reset({keepIsValid: true});
-        // clearErrors();
         console.log(data);
         fetch('../api/Form', {
             method: 'POST',
@@ -24,14 +23,16 @@ export default function Contact (){
     return(
         <section id="contact"
         className="relative bg-gray-100">
-            <div className="container flex-col mt-32">
-                <h2 className="heading-text text-5xl  text-center">
-                    Contact Us
-                </h2>
-                <p className="p-text mt-3 text-base text-center">
-                    If you have any questions or concerns, feel free to
-                    send us a message!
-                </p>
+            <div className="container flex-col mt-28">
+                <div className="flex-col py-10">
+                    <h2 className="heading-text text-5xl text-center">
+                        Contact Us
+                    </h2>
+                    <p className="p-text mt-3 text-base text-center">
+                        If you have any questions or concerns, feel free to
+                        send us a message!
+                    </p>
+                </div>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className="flex flex-col mt-8 w-2/3 mx-auto">
                         <span className="text-left uppercase text-sm text-gray-600 font-bold ">Full Name</span>
@@ -89,8 +90,8 @@ export default function Contact (){
                         </text>
                     )}
                     </div>
-                    <div 
-                    className="flex sm:mx-auto flex-row-reverse mt-8 w-5/6">
+                    <div
+                    className="flex sm:mx-auto flex-row-reverse mt-8 w-5/6 py-5">
                                 <button 
                                 type="submit" className="btn btn-black hover:bg-gray-900">
                                 Send Message
