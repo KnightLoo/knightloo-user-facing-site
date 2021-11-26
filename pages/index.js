@@ -11,19 +11,28 @@ import React, { ReactElement, useState} from 'react'
 
 export default function Home() {
     return(
-        <html>
-            <head>
+        <div>
+            <Head>
+                <title>KnightLoo</title>
+
+                <link rel="shortcut icon" type="image/png" href="knightloo_no_bg.png" sizes="64x64"/>
                 <link rel="stylesheet" href="https://rsms.me/inter/inter.css"/>
-                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
-            </head>
-            <body>
+                <link rel="stylesheet"  href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+
+                <meta property="og:url" content="www.knightloo.com" />
+                <meta property="og:type" content="website" />
+                <meta property="og:image" content="knightloo_link_preview_icon.png" />
+                <meta property="og:desciption" content="The UCF Bathroom Finder." />
+                <meta property="og:title" content="KnightLoo" />
+            </Head>
+            <div>
                 <Navbar />
                 <Hero></Hero>
                 <Features></Features>
                 <Carousel></Carousel>
                 <Contact></Contact>
                 <Footer></Footer>
-            </body>
-        </html>    
+            </div>
+        </div>    
     );
 }

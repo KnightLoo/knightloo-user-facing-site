@@ -42,7 +42,7 @@ export default function Carousel(){
           pagination={{clickable: true}}
           >
           
-          <SwiperSlide>
+          <SwiperSlide key="" >
           
           <img className="w-full sm:w-3/5 md:w-3/5 lg:w-full" src="/image0.png"/>
           

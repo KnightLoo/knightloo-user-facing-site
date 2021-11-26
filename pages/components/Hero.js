@@ -1,4 +1,5 @@
-import React, { ReactElement, useState} from 'react'
+import React, { ReactElement, useState} from 'react';
+import Image from 'next/image';
 
 export default function Hero(){
     return(
@@ -212,7 +213,7 @@ export default function Hero(){
                     </div>
                 </div>
                 <div className="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10">
-                    <img className="w-4/6 sm:w-3/4 sm:h-3/4 md:w-7/12" src="/image5.png" ></img>
+                    <img alt="hero-img" className="w-4/6 sm:w-3/4 sm:h-3/4 md:w-7/12" src="/image5.png" />
                 </div>
             </div>
         </section>
