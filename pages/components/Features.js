@@ -65,7 +65,7 @@ export default function Features(){
                     </div>
                 </div>
                 <div className="flex justify-center mb-10 md:mb-16 lg:-mt-12">
-                <img className="w-11/12 sm:w-3/5 md:w-3/5 lg:w-9/12" src="/image1.png"/>
+                <img className="w-10/12 sm:w-3/5 md:w-3/5 lg:w-9/12" src="/image1.png"/>
                 </div>
             </div>  
         </section>
